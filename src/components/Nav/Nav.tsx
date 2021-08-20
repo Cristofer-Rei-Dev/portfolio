@@ -31,13 +31,13 @@ const Nav = () => {
                 <Row as={RowItem} spacing={4} items={"center"}>
                     <Row as="ul" content={"space-evenly"}>
                         <li>
-                            Lorem ipsum
+                            <Text>Lorem ipsum</Text>
                         </li>
                         <li>
-                            Lorem ipsum
+                            <Text>Lorem ipsum</Text>
                         </li>
                         <li>
-                            Lorem ipsum
+                            <Text>Lorem ipsum</Text>
                         </li>
                     </Row>
                 </Row>
@@ -56,27 +56,35 @@ const Nav = () => {
                     </Row>
                 </Row>
             </Row>
-            <Row style={{ padding: "8px 15px" }} as="article" items={"center"} content={"center"}>
-                <Row as={"ul"} content={"space-evenly"}>
-                    <li>
-                        Lorem ipsum
-                    </li>
-                    <li>
-                        Lorem ipsum
-                    </li>
-                    <li>
-                        Lorem ipsum
-                    </li>
-                    <li>
-                        Lorem ipsum
-                    </li>
-                    <li>
-                        Lorem ipsum
-                    </li>
-                    <li>
-                        Lorem ipsum
-                    </li>
-                </Row>
+            <Row style={{ padding: "8px 15px" }} as="article" items={"center"} content={"space-evenly"}>
+                <RowItem spacing={3}>
+                    <Text align={"center"}>
+                        Alguma coisa
+                    </Text>
+                </RowItem>
+                <RowItem spacing={6}>
+                    <Row as={"ul"} content={"space-evenly"}>
+                        <li className="floating-border">
+                            <Text>Lorem ipsum</Text>
+                        </li>
+                        <li>
+                            <Text>Lorem ipsum</Text>
+                        </li>
+                        <li>
+                            <Text>Lorem ipsum</Text>
+                        </li>
+                        <li>
+                            <Text>Lorem ipsum</Text>
+                        </li>
+                        <li>
+                            <Text>Lorem ipsum</Text>
+                        </li>
+                        <li>
+                            <Text>Lorem ipsum</Text>
+                        </li>
+                    </Row>
+                </RowItem>
+                <RowItem spacing={3} />
             </Row>
         </MainHeader>
     )
