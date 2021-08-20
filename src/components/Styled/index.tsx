@@ -4,14 +4,22 @@ export type colorName = ("primary")
 
 interface iTheme {
     primary: string
+    dark: string
+    lightDark: string
+    light: string
+    lighter: string
 }
 
 declare module 'styled-components' {
     export interface DefaultTheme extends iTheme {}
 }
 
-const StyledTheme = {
-    primary: "rgb(64, 45, 140)"
+const StyledTheme: iTheme = {
+    primary: "rgb(64, 45, 140)",
+    dark: "rgb(31, 29, 40)",
+    lightDark: "rgb(31, 29, 40, .1)",
+    light: "rgb(255, 255, 255)",
+    lighter: "rgb(255, 255, 255, .2)",
 }
 
 const Global = createGlobalStyle`
