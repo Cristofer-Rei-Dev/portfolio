@@ -8,6 +8,15 @@ module.exports = {
     "gatsby-plugin-styled-components",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
-    "gatsby-plugin-sass"
+    "gatsby-plugin-sass",
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Roboto`,
+          `Roboto\:300,400,400i,700` // you can also specify font weights and styles
+        ]
+      }
+    }
   ],
 };
